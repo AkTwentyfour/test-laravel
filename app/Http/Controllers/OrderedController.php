@@ -13,4 +13,16 @@ class OrderedController extends Controller
             'order' => Order::where('user_id', auth()->user()->id)->get()
         ]);
     }
+
+    public function show(Order $order)
+    {
+        return view('detail', [
+            'order' => $order
+        ]);
+    }
+
+    public function destroy()
+    {
+
+    }
 }

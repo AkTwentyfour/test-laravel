@@ -32,7 +32,7 @@ class OrderController extends Controller
             'amount' => $validatedData['amount']
         ]);
 
-        return redirect('/ticket');
+        return redirect('/ordered');
     }
 
 }
